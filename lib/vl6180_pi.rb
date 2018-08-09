@@ -2,6 +2,7 @@ require "vl6180_pi/version"
 
 module Vl6180Pi
   class Reader
+    # This measure in mm
     def self.read
       `#{File.dirname(__FILE__)}/../bin/read`.chomp.to_i
     end
